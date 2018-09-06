@@ -34,8 +34,8 @@ require(["./scripts/neural_network", "./scripts/jquery"], function(neural_networ
 			var right = answer.slice(from_left+1); 
 			var card_data;
 
-			chrome.storage.local.get("data", function(card_data) {
-				card_data = card_data.data;
+			chrome.storage.local.get("data", function(carddata) {
+				card_data = carddata.data;
 				var left_code = card_data[left];
 				if (left_code == "") {
 					left_code = "--";
