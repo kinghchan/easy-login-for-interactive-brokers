@@ -20,12 +20,12 @@ define(["./jquery", "./underscore"], function() {
 		return _.unzip(arr);
 	};
 
-	function shape(arr) {
+	var shape = function (arr) {
 		if (arr.length == 0 || arr[0].length == 0) {
 			throw "Check array dimension";
 		} else {
 			return [arr.length, arr[0].length];
-		}
+		};
 	};
 
 	var dot_same = function (arr1, arr2) {
